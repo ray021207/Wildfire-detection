@@ -1,0 +1,8 @@
+.claude/
+CLAUDE.md
+data/
+.venv/
+__pycache__/
+*.pyc
+models/
+*.onnx

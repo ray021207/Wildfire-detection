@@ -1,0 +1,14 @@
+{
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "cpu": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD",
+  "cpu_logical_cores": 16,
+  "torch": "2.11.0+cu128",
+  "cuda_available": true,
+  "gpu_name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "gpu_memory_gb": 8.59,
+  "disk_free_gb": 228.7,
+  "venv_size_gb": 4.94,
+  "storage_budget_gb": 10.0,
+  "seed": 1234
+}
