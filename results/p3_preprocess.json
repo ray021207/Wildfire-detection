@@ -1,0 +1,47 @@
+{
+  "n_consecutive_pairs": 8558,
+  "n_negative_pairs": 4193,
+  "shift_px_median": 0.08596459659979645,
+  "shift_px_p95": 1.0110759426926543,
+  "share_pairs_shift_over_1px": 0.05127593608394944,
+  "share_pairs_shift_over_3px": 0.005485332697352731,
+  "change_threshold_grey_levels": 25,
+  "neg_changed_pixels_raw_mean_pct": 1.5028179293617938,
+  "neg_changed_pixels_aligned_mean_pct": 1.505678576692148,
+  "neg_mad_raw_mean": 3.385806518136537,
+  "neg_mad_aligned_mean": 3.4059047149102435,
+  "neg_share_pairs_alignment_reduced_change": 0.7142857142857143,
+  "low_confidence_pairs_response_below_gate": 776,
+  "gate": {
+    "min_response": 0.9,
+    "min_shift_px": 1.0
+  },
+  "gated_pairs": {
+    "pass_gate": {
+      "n": 20,
+      "changed_raw_pct": 0.9021037984728895,
+      "changed_aligned_pct": 0.6765895783287578,
+      "share_improved": 0.45
+    },
+    "big_shift_low_confidence": {
+      "n": 195,
+      "changed_raw_pct": 6.382665593707654,
+      "changed_aligned_pct": 7.235605108186825,
+      "share_improved": 0.015384615384615385
+    },
+    "all_neg_changed_pct_with_gated_policy": 1.501742259339642
+  },
+  "shaky_pairs_over_1px": {
+    "n": 215,
+    "changed_raw_pct": 5.872845891825349,
+    "changed_aligned_pct": 6.625464128665144
+  },
+  "tiling_example": "20160604_FIRE_rm-n-mobo-c/1465065720_+00120.jpg",
+  "pixels_per_tile_after_whole_image_shrink": 32,
+  "failure_examples": {
+    "camera shake (largest confident shift)": "20241209_FranklinFire_69bravo-w-mobo-c/1733812984_-00360.jpg",
+    "fooled estimator (large low-confidence shift)": "20220831-Border32fire-pi-s-mobo-c/1661979778_-01080.jpg",
+    "lighting change (largest brightness jump)": "20180727_FIRE_bh-s-mobo-c/1532722454_-01200.jpg",
+    "most change left after alignment (clouds, noise, ...)": "20240201.061849-FIRE-ml-s-mobo-c/1706795929_-01200.jpg"
+  }
+}
