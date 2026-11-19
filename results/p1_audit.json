@@ -1,0 +1,75 @@
+{
+  "n_sequences": 110,
+  "n_fire_events": 92,
+  "n_fire_days": 91,
+  "n_cameras": 69,
+  "n_sites": 30,
+  "n_frames": 8668,
+  "frames_per_sequence": {
+    "min": 41.0,
+    "median": 80.5,
+    "mean": 78.8,
+    "max": 162.0
+  },
+  "frame_interval_s": {
+    "min": 59.0,
+    "median": 60.0,
+    "mean": 61.63181818181818,
+    "max": 120.0
+  },
+  "interval_s_value_counts": {
+    "60.0": 105,
+    "120.0": 3,
+    "61.0": 1,
+    "59.0": 1
+  },
+  "original_resolutions": {
+    "3072x2048": 74,
+    "2048x1536": 32,
+    "1600x1200": 4
+  },
+  "offset_range_min": [
+    -40.0,
+    40.0
+  ],
+  "n_frames_before_t0": 4303,
+  "n_frames_at_or_after_t0": 4365,
+  "night_brightness_threshold": 50,
+  "night_frame_share": 0.04995385325334564,
+  "sequences_mostly_night": 6,
+  "n_sequences_with_boxes": 9,
+  "n_frames_with_boxes": 309,
+  "box_frames_before_t0": 0,
+  "sequences_per_site": {
+    "rm": 6,
+    "smer": 6,
+    "lp": 6,
+    "om": 6,
+    "pi": 6,
+    "mg": 6,
+    "sm": 6,
+    "bh": 6,
+    "hp": 6,
+    "wc": 6,
+    "wilson": 6,
+    "bm": 6,
+    "ml": 4,
+    "lo": 4,
+    "bl": 4,
+    "cp": 3,
+    "tp": 3,
+    "mlo": 3,
+    "vo": 2,
+    "stgo": 2,
+    "sdsc": 2,
+    "buff": 2,
+    "starr": 2,
+    "mw": 1,
+    "sp": 1,
+    "ws": 1,
+    "sojr": 1,
+    "dwpgm": 1,
+    "69bravo": 1,
+    "sjh": 1
+  }
+}

@@ -1,0 +1,1566 @@
+{
+  "n_sequences_listed": 529,
+  "n_bb_label_files": 9,
+  "bb_sequences": [
+    "20160604_FIRE_rm-n-mobo-c",
+    "20160604_FIRE_smer-tcs3-mobo-c",
+    "20160619_FIRE_lp-e-iqeye",
+    "20160619_FIRE_om-e-mobo-c",
+    "20160619_FIRE_pi-s-mobo-c",
+    "20160711_FIRE_ml-n-mobo-c",
+    "20160718_FIRE_lp-n-iqeye",
+    "20160718_FIRE_mg-s-iqeye",
+    "20160718_FIRE_mw-e-mobo-c"
+  ],
+  "n_mono_twins_dropped": 23,
+  "max_per_site": 6,
+  "jpeg_quality": 85,
+  "kept_width": 1536,
+  "n_requested": 110,
+  "n_kept": 110,
+  "stopped_early_for_budget": false,
+  "total_tgz_downloaded_gb": 7.67,
+  "frames_dir_gb": 2.16,
+  "kept": [
+    {
+      "sequence": "20160604_FIRE_rm-n-mobo-c",
+      "date": "20160604",
+      "fire": "FIRE",
+      "camera": "rm-n-mobo-c",
+      "site": "rm",
+      "event": "20160604_FIRE",
+      "n_frames": 81,
+      "original_sizes": {
+        "2048x1536": 81
+      },
+      "tgz_bytes": 90286376,
+      "unreadable": []
+    },
+    {
+      "sequence": "20160604_FIRE_smer-tcs3-mobo-c",
+      "date": "20160604",
+      "fire": "FIRE",
+      "camera": "smer-tcs3-mobo-c",
+      "site": "smer",
+      "event": "20160604_FIRE",
+      "n_frames": 81,
+      "original_sizes": {
+        "3072x2048": 81
+      },
+      "tgz_bytes": 75548044,
+      "unreadable": []
+    },
+    {
+      "sequence": "20160619_FIRE_lp-e-iqeye",
+      "date": "20160619",
+      "fire": "FIRE",
+      "camera": "lp-e-iqeye",
+      "site": "lp",
+      "event": "20160619_FIRE",
+      "n_frames": 41,
+      "original_sizes": {
+        "1600x1200": 41
+      },
+      "tgz_bytes": 25768299,
+      "unreadable": []
+    },
+    {
+      "sequence": "20160619_FIRE_om-e-mobo-c",
+      "date": "20160619",
+      "fire": "FIRE",
+      "camera": "om-e-mobo-c",
+      "site": "om",
+      "event": "20160619_FIRE",
+      "n_frames": 81,
+      "original_sizes": {
+        "2048x1536": 81
+      },
+      "tgz_bytes": 91668618,
+      "unreadable": []
+    },
+    {
+      "sequence": "20160619_FIRE_pi-s-mobo-c",
+      "date": "20160619",
+      "fire": "FIRE",
+      "camera": "pi-s-mobo-c",
+      "site": "pi",
+      "event": "20160619_FIRE",
+      "n_frames": 81,
+      "original_sizes": {
+        "2048x1536": 81
+      },
+      "tgz_bytes": 84834327,
+      "unreadable": []
+    },
+    {
+      "sequence": "20160711_FIRE_ml-n-mobo-c",
+      "date": "20160711",
+      "fire": "FIRE",
+      "camera": "ml-n-mobo-c",
+      "site": "ml",
+      "event": "20160711_FIRE",
+      "n_frames": 81,
+      "original_sizes": {
+        "2048x1536": 81
+      },
+      "tgz_bytes": 90847043,
+      "unreadable": []
+    },
+    {
+      "sequence": "20160718_FIRE_lp-n-iqeye",
+      "date": "20160718",
+      "fire": "FIRE",
+      "camera": "lp-n-iqeye",
+      "site": "lp",
+      "event": "20160718_FIRE",
+      "n_frames": 41,
+      "original_sizes": {
+        "1600x1200": 41
+      },
+      "tgz_bytes": 24760616,
+      "unreadable": []
+    },
+    {
+      "sequence": "20160718_FIRE_mg-s-iqeye",
+      "date": "20160718",
+      "fire": "FIRE",
+      "camera": "mg-s-iqeye",
+      "site": "mg",
+      "event": "20160718_FIRE",
+      "n_frames": 41,
+      "original_sizes": {
+        "1600x1200": 41
+      },
+      "tgz_bytes": 19170576,
+      "unreadable": []
+    },
+    {
+      "sequence": "20160718_FIRE_mw-e-mobo-c",
+      "date": "20160718",
+      "fire": "FIRE",
+      "camera": "mw-e-mobo-c",
+      "site": "mw",
+      "event": "20160718_FIRE",
+      "n_frames": 81,
+      "original_sizes": {
+        "2048x1536": 81
+      },
+      "tgz_bytes": 128400935,
+      "unreadable": []
+    },
+    {
+      "sequence": "20170519_FIRE_rm-w-mobo-c",
+      "date": "20170519",
+      "fire": "FIRE",
+      "camera": "rm-w-mobo-c",
+      "site": "rm",
+      "event": "20170519_FIRE",
+      "n_frames": 81,
+      "original_sizes": {
+        "2048x1536": 81
+      },
+      "tgz_bytes": 89822707,
+      "unreadable": []
+    },
+    {
+      "sequence": "20251019_RanchFire_wc-w-mobo-m",
+      "date": "20251019",
+      "fire": "RanchFire",
+      "camera": "wc-w-mobo-m",
+      "site": "wc",
+      "event": "20251019_RanchFire",
+      "n_frames": 80,
+      "original_sizes": {
+        "3072x2048": 80
+      },
+      "tgz_bytes": 70465180,
+      "unreadable": []
+    },
+    {
+      "sequence": "20240514.123936-FIRE-hp-n-mobo-c",
+      "date": "20240514",
+      "fire": "123936-FIRE",
+      "camera": "hp-n-mobo-c",
+      "site": "hp",
+      "event": "20240514_123936-FIRE",
+      "n_frames": 81,
+      "original_sizes": {
+        "3072x2048": 81
+      },
+      "tgz_bytes": 84485935,
+      "unreadable": []
+    },
+    {
+      "sequence": "20250709_SteeleFire_lp-w-mobo-c",
+      "date": "20250709",
+      "fire": "SteeleFire",
+      "camera": "lp-w-mobo-c",
+      "site": "lp",
+      "event": "20250709_SteeleFire",
+      "n_frames": 80,
+      "original_sizes": {
+        "3072x2048": 80
+      },
+      "tgz_bytes": 58858231,
+      "unreadable": []
+    },
+    {
+      "sequence": "20250617_MonteFire_cp-w-mobo-c",
+      "date": "20250617",
+      "fire": "MonteFire",
+      "camera": "cp-w-mobo-c",
+      "site": "cp",
+      "event": "20250617_MonteFire",
+      "n_frames": 80,
+      "original_sizes": {
+        "3072x2048": 80
+      },
+      "tgz_bytes": 41577780,
+      "unreadable": []
+    },
+    {
+      "sequence": "20220405-fire-in-Fallbrook-rm-s-mobo-c",
+      "date": "20220405",
+      "fire": "fire-in-Fallbrook",
+      "camera": "rm-s-mobo-c",
+      "site": "rm",
+      "event": "20220405_fire-in-Fallbrook",
+      "n_frames": 80,
+      "original_sizes": {
+        "3072x2048": 80
+      },
+      "tgz_bytes": 76350783,
+      "unreadable": []
+    },
+    {
+      "sequence": "20200906-BobcatFire-wilson-e-mobo-c",
+      "date": "20200906",
+      "fire": "BobcatFire",
+      "camera": "wilson-e-mobo-c",
+      "site": "wilson",
+      "event": "20200906_BobcatFire",
+      "n_frames": 81,
+      "original_sizes": {
+        "3072x2048": 81
+      },
+      "tgz_bytes": 79715173,
+      "unreadable": []
+    },
+    {
+      "sequence": "20240701_Kitchenfire_pi-e-mobo-c",
+      "date": "20240701",
+      "fire": "Kitchenfire",
+      "camera": "pi-e-mobo-c",
+      "site": "pi",
+      "event": "20240701_Kitchenfire",
+      "n_frames": 80,
+      "original_sizes": {
+        "3072x2048": 80
+      },
+      "tgz_bytes": 42407583,
+      "unreadable": []
+    },
+    {
+      "sequence": "20180919_FIRE_rm-e-mobo-c",
+      "date": "20180919",
+      "fire": "FIRE",
+      "camera": "rm-e-mobo-c",
+      "site": "rm",
+      "event": "20180919_FIRE",
+      "n_frames": 81,
+      "original_sizes": {
+        "2048x1536": 81
+      },
+      "tgz_bytes": 52607096,
+      "unreadable": []
+    },
+    {
+      "sequence": "20260816_SorrentoFire_sdsc-e-mobo-c",
+      "date": "20260816",
+      "fire": "SorrentoFire",
+      "camera": "sdsc-e-mobo-c",
+      "site": "sdsc",
+      "event": "20260816_SorrentoFire",
+      "n_frames": 80,
+      "original_sizes": {
+        "3072x2048": 80
+      },
+      "tgz_bytes": 58530838,
+      "unreadable": []
+    },
+    {
+      "sequence": "20191006_FIRE_lp-n-mobo-c",
+      "date": "20191006",
+      "fire": "FIRE",
+      "camera": "lp-n-mobo-c",
+      "site": "lp",
+      "event": "20191006_FIRE",
+      "n_frames": 73,
+      "original_sizes": {
+        "3072x2048": 73
+      },
+      "tgz_bytes": 103576450,
+      "unreadable": []
+    },
+    {
+      "sequence": "20190825_FIRE-smer-tcs8-mobo-c",
+      "date": "20190825",
+      "fire": "FIRE",
+      "camera": "smer-tcs8-mobo-c",
+      "site": "smer",
+      "event": "20190825_FIRE",
+      "n_frames": 80,
+      "original_sizes": {
+        "3072x2048": 80
+      },
+      "tgz_bytes": 126354297,
+      "unreadable": []
+    },
+    {
+      "sequence": "20260629_JunctionFire_bm-e-mobo-c",
+      "date": "20260629",
+      "fire": "JunctionFire",
+      "camera": "bm-e-mobo-c",
+      "site": "bm",
+      "event": "20260629_JunctionFire",
+      "n_frames": 81,
+      "original_sizes": {
+        "3072x2048": 81
+      },
+      "tgz_bytes": 70000086,
+      "unreadable": []
+    },
+    {
+      "sequence": "20250801_BernardoFire_bl-n-mobo-c",
+      "date": "20250801",
+      "fire": "BernardoFire",
+      "camera": "bl-n-mobo-c",
+      "site": "bl",
+      "event": "20250801_BernardoFire",
+      "n_frames": 81,
+      "original_sizes": {
+        "2048x1536": 81
+      },
+      "tgz_bytes": 76174646,
+      "unreadable": []
+    },
+    {
+      "sequence": "20191007_FIRE_om-s-mobo-c",
+      "date": "20191007",
+      "fire": "FIRE",
+      "camera": "om-s-mobo-c",
+      "site": "om",
+      "event": "20191007_FIRE",
+      "n_frames": 81,
+      "original_sizes": {
+        "3072x2048": 81
+      },
+      "tgz_bytes": 46295777,
+      "unreadable": []
+    },
+    {
+      "sequence": "20190629_FIRE_hp-n-mobo-c",
+      "date": "20190629",
+      "fire": "FIRE",
+      "camera": "hp-n-mobo-c",
+      "site": "hp",
+      "event": "20190629_FIRE",
+      "n_frames": 57,
+      "original_sizes": {
+        "2048x1536": 57
+      },
+      "tgz_bytes": 41629374,
+      "unreadable": []
+    },
+    {
+      "sequence": "20210209_FIRE_hp-e-mobo-c",
+      "date": "20210209",
+      "fire": "FIRE",
+      "camera": "hp-e-mobo-c",
+      "site": "hp",
+      "event": "20210209_FIRE",
+      "n_frames": 78,
+      "original_sizes": {
+        "2048x1536": 78
+      },
+      "tgz_bytes": 56617252,
+      "unreadable": []
+    },
+    {
+      "sequence": "20190801_Caliente_om-w-mobo",
+      "date": "20190801",
+      "fire": "Caliente",
+      "camera": "om-w-mobo",
+      "site": "om",
+      "event": "20190801_Caliente",
+      "n_frames": 81,
+      "original_sizes": {
+        "3072x2048": 81
+      },
+      "tgz_bytes": 55219286,
+      "unreadable": []
+    },
+    {
+      "sequence": "20180727_FIRE_bl-e-mobo-c",
+      "date": "20180727",
+      "fire": "FIRE",
+      "camera": "bl-e-mobo-c",
+      "site": "bl",
+      "event": "20180727_FIRE",
+      "n_frames": 81,
+      "original_sizes": {
+        "2048x1536": 81
+      },
+      "tgz_bytes": 51737978,
+      "unreadable": []
+    },
+    {
+      "sequence": "20200709_Tripp_hp-n-mobo-c",
+      "date": "20200709",
+      "fire": "Tripp",
+      "camera": "hp-n-mobo-c",
+      "site": "hp",
+      "event": "20200709_Tripp",
+      "n_frames": 81,
+      "original_sizes": {
+        "2048x1536": 81
+      },
+      "tgz_bytes": 63205795,
+      "unreadable": []
+    },
+    {
+      "sequence": "20230718.131911-FIRE-bh-w-mobo-c",
+      "date": "20230718",
+      "fire": "131911-FIRE",
+      "camera": "bh-w-mobo-c",
+      "site": "bh",
+      "event": "20230718_131911-FIRE",
+      "n_frames": 76,
+      "original_sizes": {
+        "3072x2048": 76
+      },
+      "tgz_bytes": 52665614,
+      "unreadable": []
+    },
+    {
+      "sequence": "20231026.103121-prescribed-bm-s-mobo-c",
+      "date": "20231026",
+      "fire": "103121-prescribed",
+      "camera": "bm-s-mobo-c",
+      "site": "bm",
+      "event": "20231026_103121-prescribed",
+      "n_frames": 81,
+      "original_sizes": {
+        "3072x2048": 81
+      },
+      "tgz_bytes": 52519827,
+      "unreadable": []
+    },
+    {
+      "sequence": "20180806_FIRE_mg-s-mobo-c",
+      "date": "20180806",
+      "fire": "FIRE",
+      "camera": "mg-s-mobo-c",
+      "site": "mg",
+      "event": "20180806_FIRE",
+      "n_frames": 78,
+      "original_sizes": {
+        "3072x2048": 78
+      },
+      "tgz_bytes": 81093265,
+      "unreadable": []
+    },
+    {
+      "sequence": "20260629_JunctionFire_hp-e-mobo-c",
+      "date": "20260629",
+      "fire": "JunctionFire",
+      "camera": "hp-e-mobo-c",
+      "site": "hp",
+      "event": "20260629_JunctionFire",
+      "n_frames": 77,
+      "original_sizes": {
+        "3072x2048": 77
+      },
+      "tgz_bytes": 76807473,
+      "unreadable": []
+    },
+    {
+      "sequence": "20200822_BrattonFire_lp-s-mobo-c",
+      "date": "20200822",
+      "fire": "BrattonFire",
+      "camera": "lp-s-mobo-c",
+      "site": "lp",
+      "event": "20200822_BrattonFire",
+      "n_frames": 81,
+      "original_sizes": {
+        "3072x2048": 81
+      },
+      "tgz_bytes": 72424615,
+      "unreadable": []
+    },
+    {
+      "sequence": "20241113_Fire_dwpgm-w-mobo-c",
+      "date": "20241113",
+      "fire": "Fire",
+      "camera": "dwpgm-w-mobo-c",
+      "site": "dwpgm",
+      "event": "20241113_Fire",
+      "n_frames": 80,
+      "original_sizes": {
+        "3072x2048": 80
+      },
+      "tgz_bytes": 70358718,
+      "unreadable": []
+    },
+    {
+      "sequence": "20190924_FIRE_hp-s-mobo-c",
+      "date": "20190924",
+      "fire": "FIRE",
+      "camera": "hp-s-mobo-c",
+      "site": "hp",
+      "event": "20190924_FIRE",
+      "n_frames": 80,
+      "original_sizes": {
+        "2048x1536": 80
+      },
+      "tgz_bytes": 51936957,
+      "unreadable": []
+    },
+    {
+      "sequence": "20200806_SpringsFire_om-n-mobo-c",
+      "date": "20200806",
+      "fire": "SpringsFire",
+      "camera": "om-n-mobo-c",
+      "site": "om",
+      "event": "20200806_SpringsFire",
+      "n_frames": 65,
+      "original_sizes": {
+        "3072x2048": 65
+      },
+      "tgz_bytes": 64149967,
+      "unreadable": []
+    },
+    {
+      "sequence": "20170625_FIRE_mg-s-iqeye",
+      "date": "20170625",
+      "fire": "FIRE",
+      "camera": "mg-s-iqeye",
+      "site": "mg",
+      "event": "20170625_FIRE",
+      "n_frames": 81,
+      "original_sizes": {
+        "1600x1200": 81
+      },
+      "tgz_bytes": 35032712,
+      "unreadable": []
+    },
+    {
+      "sequence": "20250107_EatonFire_wilson-s-mobo-c",
+      "date": "20250107",
+      "fire": "EatonFire",
+      "camera": "wilson-s-mobo-c",
+      "site": "wilson",
+      "event": "20250107_EatonFire",
+      "n_frames": 80,
+      "original_sizes": {
+        "3072x2048": 80
+      },
+      "tgz_bytes": 51616513,
+      "unreadable": []
+    },
+    {
+      "sequence": "20220831-Border32fire-pi-s-mobo-c",
+      "date": "20220831",
+      "fire": "Border32fire",
+      "camera": "pi-s-mobo-c",
+      "site": "pi",
+      "event": "20220831_Border32fire",
+      "n_frames": 64,
+      "original_sizes": {
+        "3072x2048": 64
+      },
+      "tgz_bytes": 38577203,
+      "unreadable": []
+    },
+    {
+      "sequence": "20240608_AquaductFire_sdsc-e-mobo-c",
+      "date": "20240608",
+      "fire": "AquaductFire",
+      "camera": "sdsc-e-mobo-c",
+      "site": "sdsc",
+      "event": "20240608_AquaductFire",
+      "n_frames": 80,
+      "original_sizes": {
+        "3072x2048": 80
+      },
+      "tgz_bytes": 69270676,
+      "unreadable": []
+    },
+    {
+      "sequence": "20240806_Border68FireMayBeHardToFind_om-w-mobo-c",
+      "date": "20240806",
+      "fire": "Border68FireMayBeHardToFind",
+      "camera": "om-w-mobo-c",
+      "site": "om",
+      "event": "20240806_Border68FireMayBeHardToFind",
+      "n_frames": 81,
+      "original_sizes": {
+        "3072x2048": 81
+      },
+      "tgz_bytes": 48378389,
+      "unreadable": []
+    },
+    {
+      "sequence": "20240828_KeysFire_bh-w-mobo-c",
+      "date": "20240828",
+      "fire": "KeysFire",
+      "camera": "bh-w-mobo-c",
+      "site": "bh",
+      "event": "20240828_KeysFire",
+      "n_frames": 81,
+      "original_sizes": {
+        "3072x2048": 81
+      },
+      "tgz_bytes": 52004153,
+      "unreadable": []
+    },
+    {
+      "sequence": "20201202_WillowFire-nightime-near-CDF-HQ_sm-n-mobo-c",
+      "date": "20201202",
+      "fire": "WillowFire-nightime-near-CDF-HQ",
+      "camera": "sm-n-mobo-c",
+      "site": "sm",
+      "event": "20201202_WillowFire-nightime-near-CDF-HQ",
+      "n_frames": 77,
+      "original_sizes": {
+        "3072x2048": 77
+      },
+      "tgz_bytes": 83582007,
+      "unreadable": []
+    },
+    {
+      "sequence": "20180727_FIRE_bh-s-mobo-c",
+      "date": "20180727",
+      "fire": "FIRE",
+      "camera": "bh-s-mobo-c",
+      "site": "bh",
+      "event": "20180727_FIRE",
+      "n_frames": 81,
+      "original_sizes": {
+        "2048x1536": 81
+      },
+      "tgz_bytes": 52133739,
+      "unreadable": []
+    },
+    {
+      "sequence": "20250709_SteeleFire_om-n-mobo-c",
+      "date": "20250709",
+      "fire": "SteeleFire",
+      "camera": "om-n-mobo-c",
+      "site": "om",
+      "event": "20250709_SteeleFire",
+      "n_frames": 80,
+      "original_sizes": {
+        "3072x2048": 80
+      },
+      "tgz_bytes": 62065637,
+      "unreadable": []
+    },
+    {
+      "sequence": "20170807_FIRE_bh-n-mobo-c",
+      "date": "20170807",
+      "fire": "FIRE",
+      "camera": "bh-n-mobo-c",
+      "site": "bh",
+      "event": "20170807_FIRE",
+      "n_frames": 78,
+      "original_sizes": {
+        "2048x1536": 78
+      },
+      "tgz_bytes": 84002616,
+      "unreadable": []
+    },
+    {
+      "sequence": "20190915_FIRE_rm-n-mobo-c",
+      "date": "20190915",
+      "fire": "FIRE",
+      "camera": "rm-n-mobo-c",
+      "site": "rm",
+      "event": "20190915_FIRE",
+      "n_frames": 78,
+      "original_sizes": {
+        "2048x1536": 78
+      },
+      "tgz_bytes": 57167723,
+      "unreadable": []
+    },
+    {
+      "sequence": "20240701_Kitchenfire_ws-w-mobo-c",
+      "date": "20240701",
+      "fire": "Kitchenfire",
+      "camera": "ws-w-mobo-c",
+      "site": "ws",
+      "event": "20240701_Kitchenfire",
+      "n_frames": 81,
+      "original_sizes": {
+        "3072x2048": 81
+      },
+      "tgz_bytes": 72324599,
+      "unreadable": []
+    },
+    {
+      "sequence": "20190922_FIRE_ml-w-mobo-c",
+      "date": "20190922",
+      "fire": "FIRE",
+      "camera": "ml-w-mobo-c",
+      "site": "ml",
+      "event": "20190922_FIRE",
+      "n_frames": 81,
+      "original_sizes": {
+        "2048x1536": 81
+      },
+      "tgz_bytes": 56519347,
+      "unreadable": []
+    },
+    {
+      "sequence": "20260519_TusilFire_mlo-s-mobo-c",
+      "date": "20260519",
+      "fire": "TusilFire",
+      "camera": "mlo-s-mobo-c",
+      "site": "mlo",
+      "event": "20260519_TusilFire",
+      "n_frames": 81,
+      "original_sizes": {
+        "3072x2048": 81
+      },
+      "tgz_bytes": 69877679,
+      "unreadable": []
+    },
+    {
+      "sequence": "20260128_Fire_wilson-s-mobo-c",
+      "date": "20260128",
+      "fire": "Fire",
+      "camera": "wilson-s-mobo-c",
+      "site": "wilson",
+      "event": "20260128_Fire",
+      "n_frames": 80,
+      "original_sizes": {
+        "3072x2048": 80
+      },
+      "tgz_bytes": 43949938,
+      "unreadable": []
+    },
+    {
+      "sequence": "20180612_FIRE_rm-w-mobo-c",
+      "date": "20180612",
+      "fire": "FIRE",
+      "camera": "rm-w-mobo-c",
+      "site": "rm",
+      "event": "20180612_FIRE",
+      "n_frames": 81,
+      "original_sizes": {
+        "2048x1536": 81
+      },
+      "tgz_bytes": 57372335,
+      "unreadable": []
+    },
+    {
+      "sequence": "20241108_ResortFire_bm-n-mobo-c",
+      "date": "20241108",
+      "fire": "ResortFire",
+      "camera": "bm-n-mobo-c",
+      "site": "bm",
+      "event": "20241108_ResortFire",
+      "n_frames": 81,
+      "original_sizes": {
+        "3072x2048": 81
+      },
+      "tgz_bytes": 51501852,
+      "unreadable": []
+    },
+    {
+      "sequence": "20200712_USSBonhommeRichard_sm-w-mobo-c",
+      "date": "20200712",
+      "fire": "USSBonhommeRichard",
+      "camera": "sm-w-mobo-c",
+      "site": "sm",
+      "event": "20200712_USSBonhommeRichard",
+      "n_frames": 81,
+      "original_sizes": {
+        "2048x1536": 81
+      },
+      "tgz_bytes": 64896994,
+      "unreadable": []
+    },
+    {
+      "sequence": "20210113_Borderfire_pi-s-mobo-c",
+      "date": "20210113",
+      "fire": "Borderfire",
+      "camera": "pi-s-mobo-c",
+      "site": "pi",
+      "event": "20210113_Borderfire",
+      "n_frames": 81,
+      "original_sizes": {
+        "3072x2048": 81
+      },
+      "tgz_bytes": 75168525,
+      "unreadable": []
+    },
+    {
+      "sequence": "20210204_FIRE_tp-s-mobo-c",
+      "date": "20210204",
+      "fire": "FIRE",
+      "camera": "tp-s-mobo-c",
+      "site": "tp",
+      "event": "20210204_FIRE",
+      "n_frames": 81,
+      "original_sizes": {
+        "3072x2048": 81
+      },
+      "tgz_bytes": 111333910,
+      "unreadable": []
+    },
+    {
+      "sequence": "20191006_FIRE_lp-s-mobo-c",
+      "date": "20191006",
+      "fire": "FIRE",
+      "camera": "lp-s-mobo-c",
+      "site": "lp",
+      "event": "20191006_FIRE",
+      "n_frames": 73,
+      "original_sizes": {
+        "3072x2048": 73
+      },
+      "tgz_bytes": 84059801,
+      "unreadable": []
+    },
+    {
+      "sequence": "20241031_MontezumaFire_sm-w-mobo-c",
+      "date": "20241031",
+      "fire": "MontezumaFire",
+      "camera": "sm-w-mobo-c",
+      "site": "sm",
+      "event": "20241031_MontezumaFire",
+      "n_frames": 80,
+      "original_sizes": {
+        "3072x2048": 80
+      },
+      "tgz_bytes": 51789615,
+      "unreadable": []
+    },
+    {
+      "sequence": "20180603_FIRE_sm-w-mobo-c",
+      "date": "20180603",
+      "fire": "FIRE",
+      "camera": "sm-w-mobo-c",
+      "site": "sm",
+      "event": "20180603_FIRE",
+      "n_frames": 81,
+      "original_sizes": {
+        "2048x1536": 81
+      },
+      "tgz_bytes": 44682242,
+      "unreadable": []
+    },
+    {
+      "sequence": "20180910_FIRE_smer-tcs8-mobo-c",
+      "date": "20180910",
+      "fire": "FIRE",
+      "camera": "smer-tcs8-mobo-c",
+      "site": "smer",
+      "event": "20180910_FIRE",
+      "n_frames": 81,
+      "original_sizes": {
+        "3072x2048": 81
+      },
+      "tgz_bytes": 122302147,
+      "unreadable": []
+    },
+    {
+      "sequence": "20250530_HendersonFire_bh-w-mobo-c",
+      "date": "20250530",
+      "fire": "HendersonFire",
+      "camera": "bh-w-mobo-c",
+      "site": "bh",
+      "event": "20250530_HendersonFire",
+      "n_frames": 81,
+      "original_sizes": {
+        "3072x2048": 81
+      },
+      "tgz_bytes": 38202187,
+      "unreadable": []
+    },
+    {
+      "sequence": "20241108_Pasqual4Fire_wc-n-mobo-c",
+      "date": "20241108",
+      "fire": "Pasqual4Fire",
+      "camera": "wc-n-mobo-c",
+      "site": "wc",
+      "event": "20241108_Pasqual4Fire",
+      "n_frames": 81,
+      "original_sizes": {
+        "3072x2048": 81
+      },
+      "tgz_bytes": 93777670,
+      "unreadable": []
+    },
+    {
+      "sequence": "20190716_FIRE_mg-n-mobo-c",
+      "date": "20190716",
+      "fire": "FIRE",
+      "camera": "mg-n-mobo-c",
+      "site": "mg",
+      "event": "20190716_FIRE",
+      "n_frames": 68,
+      "original_sizes": {
+        "3072x2048": 68
+      },
+      "tgz_bytes": 108877424,
+      "unreadable": []
+    },
+    {
+      "sequence": "20200930_BoundaryFire_wc-e-mobo-c",
+      "date": "20200930",
+      "fire": "BoundaryFire",
+      "camera": "wc-e-mobo-c",
+      "site": "wc",
+      "event": "20200930_BoundaryFire",
+      "n_frames": 81,
+      "original_sizes": {
+        "3072x2048": 81
+      },
+      "tgz_bytes": 94863990,
+      "unreadable": []
+    },
+    {
+      "sequence": "20260722_CreelmanFire_bm-s-mobo-c",
+      "date": "20260722",
+      "fire": "CreelmanFire",
+      "camera": "bm-s-mobo-c",
+      "site": "bm",
+      "event": "20260722_CreelmanFire",
+      "n_frames": 81,
+      "original_sizes": {
+        "3072x2048": 81
+      },
+      "tgz_bytes": 83001847,
+      "unreadable": []
+    },
+    {
+      "sequence": "20231114.093653-prescribed-mlo-w-mobo-c",
+      "date": "20231114",
+      "fire": "093653-prescribed",
+      "camera": "mlo-w-mobo-c",
+      "site": "mlo",
+      "event": "20231114_093653-prescribed",
+      "n_frames": 81,
+      "original_sizes": {
+        "3072x2048": 81
+      },
+      "tgz_bytes": 71848437,
+      "unreadable": []
+    },
+    {
+      "sequence": "20210209_FIRE_tp-w-mobo-c",
+      "date": "20210209",
+      "fire": "FIRE",
+      "camera": "tp-w-mobo-c",
+      "site": "tp",
+      "event": "20210209_FIRE",
+      "n_frames": 77,
+      "original_sizes": {
+        "3072x2048": 77
+      },
+      "tgz_bytes": 112461585,
+      "unreadable": []
+    },
+    {
+      "sequence": "20261016_NorteFire_sjh-w-mobo-c",
+      "date": "20261016",
+      "fire": "NorteFire",
+      "camera": "sjh-w-mobo-c",
+      "site": "sjh",
+      "event": "20261016_NorteFire",
+      "n_frames": 81,
+      "original_sizes": {
+        "3072x2048": 81
+      },
+      "tgz_bytes": 83472414,
+      "unreadable": []
+    },
+    {
+      "sequence": "20190610_Pauma_bh-w-mobo-c",
+      "date": "20190610",
+      "fire": "Pauma",
+      "camera": "bh-w-mobo-c",
+      "site": "bh",
+      "event": "20190610_Pauma",
+      "n_frames": 80,
+      "original_sizes": {
+        "2048x1536": 80
+      },
+      "tgz_bytes": 62658186,
+      "unreadable": []
+    },
+    {
+      "sequence": "20230809.111832-BunnieFire-cp-w-mobo-c",
+      "date": "20230809",
+      "fire": "111832-BunnieFire",
+      "camera": "cp-w-mobo-c",
+      "site": "cp",
+      "event": "20230809_111832-BunnieFire",
+      "n_frames": 80,
+      "original_sizes": {
+        "3072x2048": 80
+      },
+      "tgz_bytes": 56509938,
+      "unreadable": []
+    },
+    {
+      "sequence": "20180605_FIRE_smer-tcs9-mobo-c",
+      "date": "20180605",
+      "fire": "FIRE",
+      "camera": "smer-tcs9-mobo-c",
+      "site": "smer",
+      "event": "20180605_FIRE",
+      "n_frames": 81,
+      "original_sizes": {
+        "3072x2048": 81
+      },
+      "tgz_bytes": 127044081,
+      "unreadable": []
+    },
+    {
+      "sequence": "20200521_VEGMGMT_wc-e-mobo-c",
+      "date": "20200521",
+      "fire": "VEGMGMT",
+      "camera": "wc-e-mobo-c",
+      "site": "wc",
+      "event": "20200521_VEGMGMT",
+      "n_frames": 81,
+      "original_sizes": {
+        "3072x2048": 81
+      },
+      "tgz_bytes": 101017586,
+      "unreadable": []
+    },
+    {
+      "sequence": "20180612_FIRE_smer-tcs9-mobo-c",
+      "date": "20180612",
+      "fire": "FIRE",
+      "camera": "smer-tcs9-mobo-c",
+      "site": "smer",
+      "event": "20180612_FIRE",
+      "n_frames": 81,
+      "original_sizes": {
+        "3072x2048": 81
+      },
+      "tgz_bytes": 113444857,
+      "unreadable": []
+    },
+    {
+      "sequence": "20190716_FIRE_bl-s-mobo-c",
+      "date": "20190716",
+      "fire": "FIRE",
+      "camera": "bl-s-mobo-c",
+      "site": "bl",
+      "event": "20190716_FIRE",
+      "n_frames": 70,
+      "original_sizes": {
+        "2048x1536": 70
+      },
+      "tgz_bytes": 44091362,
+      "unreadable": []
+    },
+    {
+      "sequence": "20201216_ChaparralFire_pi-w-mobo-c",
+      "date": "20201216",
+      "fire": "ChaparralFire",
+      "camera": "pi-w-mobo-c",
+      "site": "pi",
+      "event": "20201216_ChaparralFire",
+      "n_frames": 81,
+      "original_sizes": {
+        "3072x2048": 81
+      },
+      "tgz_bytes": 80468280,
+      "unreadable": []
+    },
+    {
+      "sequence": "20190715_MLOSouth2_lo-s-mobo-c",
+      "date": "20190715",
+      "fire": "MLOSouth2",
+      "camera": "lo-s-mobo-c",
+      "site": "lo",
+      "event": "20190715_MLOSouth2",
+      "n_frames": 81,
+      "original_sizes": {
+        "2048x1536": 81
+      },
+      "tgz_bytes": 51428587,
+      "unreadable": []
+    },
+    {
+      "sequence": "20241209_FranklinFire_69bravo-w-mobo-c",
+      "date": "20241209",
+      "fire": "FranklinFire",
+      "camera": "69bravo-w-mobo-c",
+      "site": "69bravo",
+      "event": "20241209_FranklinFire",
+      "n_frames": 78,
+      "original_sizes": {
+        "3072x2048": 78
+      },
+      "tgz_bytes": 42521429,
+      "unreadable": []
+    },
+    {
+      "sequence": "20250120_TedWilliamsFire_wc-w-mobo-m",
+      "date": "20250120",
+      "fire": "TedWilliamsFire",
+      "camera": "wc-w-mobo-m",
+      "site": "wc",
+      "event": "20250120_TedWilliamsFire",
+      "n_frames": 80,
+      "original_sizes": {
+        "3072x2048": 80
+      },
+      "tgz_bytes": 94703845,
+      "unreadable": []
+    },
+    {
+      "sequence": "20180719_Skyline_sp-n-mobo-c",
+      "date": "20180719",
+      "fire": "Skyline",
+      "camera": "sp-n-mobo-c",
+      "site": "sp",
+      "event": "20180719_Skyline",
+      "n_frames": 81,
+      "original_sizes": {
+        "3072x2048": 81
+      },
+      "tgz_bytes": 75785935,
+      "unreadable": []
+    },
+    {
+      "sequence": "20170711_FIRE_sm-n-mobo-c",
+      "date": "20170711",
+      "fire": "FIRE",
+      "camera": "sm-n-mobo-c",
+      "site": "sm",
+      "event": "20170711_FIRE",
+      "n_frames": 81,
+      "original_sizes": {
+        "2048x1536": 81
+      },
+      "tgz_bytes": 75616072,
+      "unreadable": []
+    },
+    {
+      "sequence": "20200829_inside-Mexico_cp-s-mobo-c",
+      "date": "20200829",
+      "fire": "inside-Mexico",
+      "camera": "cp-s-mobo-c",
+      "site": "cp",
+      "event": "20200829_inside-Mexico",
+      "n_frames": 81,
+      "original_sizes": {
+        "3072x2048": 81
+      },
+      "tgz_bytes": 70548620,
+      "unreadable": []
+    },
+    {
+      "sequence": "20190620_FIRE_smer-tcs9-mobo-c",
+      "date": "20190620",
+      "fire": "FIRE",
+      "camera": "smer-tcs9-mobo-c",
+      "site": "smer",
+      "event": "20190620_FIRE",
+      "n_frames": 72,
+      "original_sizes": {
+        "3072x2048": 72
+      },
+      "tgz_bytes": 112120261,
+      "unreadable": []
+    },
+    {
+      "sequence": "20250724_PostaFire_mlo-s-mobo-c",
+      "date": "20250724",
+      "fire": "PostaFire",
+      "camera": "mlo-s-mobo-c",
+      "site": "mlo",
+      "event": "20250724_PostaFire",
+      "n_frames": 81,
+      "original_sizes": {
+        "3072x2048": 81
+      },
+      "tgz_bytes": 74908923,
+      "unreadable": []
+    },
+    {
+      "sequence": "20240130.091751-FIRE-wilson-e-mobo-c",
+      "date": "20240130",
+      "fire": "091751-FIRE",
+      "camera": "wilson-e-mobo-c",
+      "site": "wilson",
+      "event": "20240130_091751-FIRE",
+      "n_frames": 78,
+      "original_sizes": {
+        "3072x2048": 78
+      },
+      "tgz_bytes": 48830005,
+      "unreadable": []
+    },
+    {
+      "sequence": "20231027.095451-prescribed-vo-w-mobo-c",
+      "date": "20231027",
+      "fire": "095451-prescribed",
+      "camera": "vo-w-mobo-c",
+      "site": "vo",
+      "event": "20231027_095451-prescribed",
+      "n_frames": 81,
+      "original_sizes": {
+        "3072x2048": 81
+      },
+      "tgz_bytes": 66725596,
+      "unreadable": []
+    },
+    {
+      "sequence": "20240201.061849-FIRE-ml-s-mobo-c",
+      "date": "20240201",
+      "fire": "061849-FIRE",
+      "camera": "ml-s-mobo-c",
+      "site": "ml",
+      "event": "20240201_061849-FIRE",
+      "n_frames": 80,
+      "original_sizes": {
+        "2048x1536": 80
+      },
+      "tgz_bytes": 68312546,
+      "unreadable": []
+    },
+    {
+      "sequence": "20220302-Jimfire-0921-stgo-s-mobo-c",
+      "date": "20220302",
+      "fire": "Jimfire-0921",
+      "camera": "stgo-s-mobo-c",
+      "site": "stgo",
+      "event": "20220302_Jimfire-0921",
+      "n_frames": 80,
+      "original_sizes": {
+        "3072x2048": 80
+      },
+      "tgz_bytes": 85682410,
+      "unreadable": []
+    },
+    {
+      "sequence": "20250823_Clubfire_starr-n-mobo-c",
+      "date": "20250823",
+      "fire": "Clubfire",
+      "camera": "starr-n-mobo-c",
+      "site": "starr",
+      "event": "20250823_Clubfire",
+      "n_frames": 162,
+      "original_sizes": {
+        "3072x2048": 162
+      },
+      "tgz_bytes": 160137438,
+      "unreadable": []
+    },
+    {
+      "sequence": "20230726.153347-FIRE-mg-s-mobo-c",
+      "date": "20230726",
+      "fire": "153347-FIRE",
+      "camera": "mg-s-mobo-c",
+      "site": "mg",
+      "event": "20230726_153347-FIRE",
+      "n_frames": 80,
+      "original_sizes": {
+        "3072x2048": 80
+      },
+      "tgz_bytes": 68984668,
+      "unreadable": []
+    },
+    {
+      "sequence": "20210115_Bonitafire_tp-w-mobo-c",
+      "date": "20210115",
+      "fire": "Bonitafire",
+      "camera": "tp-w-mobo-c",
+      "site": "tp",
+      "event": "20210115_Bonitafire",
+      "n_frames": 71,
+      "original_sizes": {
+        "3072x2048": 71
+      },
+      "tgz_bytes": 29904774,
+      "unreadable": []
+    },
+    {
+      "sequence": "20191006_FIRE_lo-s-mobo-c",
+      "date": "20191006",
+      "fire": "FIRE",
+      "camera": "lo-s-mobo-c",
+      "site": "lo",
+      "event": "20191006_FIRE",
+      "n_frames": 79,
+      "original_sizes": {
+        "2048x1536": 79
+      },
+      "tgz_bytes": 42595819,
+      "unreadable": []
+    },
+    {
+      "sequence": "20180603_FIRE_bl-s-mobo-c",
+      "date": "20180603",
+      "fire": "FIRE",
+      "camera": "bl-s-mobo-c",
+      "site": "bl",
+      "event": "20180603_FIRE",
+      "n_frames": 81,
+      "original_sizes": {
+        "2048x1536": 81
+      },
+      "tgz_bytes": 54617964,
+      "unreadable": []
+    },
+    {
+      "sequence": "20261015_HendersonFire_buff-s-mobo-c",
+      "date": "20261015",
+      "fire": "HendersonFire",
+      "camera": "buff-s-mobo-c",
+      "site": "buff",
+      "event": "20261015_HendersonFire",
+      "n_frames": 81,
+      "original_sizes": {
+        "3072x2048": 81
+      },
+      "tgz_bytes": 55601121,
+      "unreadable": []
+    },
+    {
+      "sequence": "20240708_VistaFire_wilson-e-mobo-c",
+      "date": "20240708",
+      "fire": "VistaFire",
+      "camera": "wilson-e-mobo-c",
+      "site": "wilson",
+      "event": "20240708_VistaFire",
+      "n_frames": 80,
+      "original_sizes": {
+        "3072x2048": 80
+      },
+      "tgz_bytes": 41949090,
+      "unreadable": []
+    },
+    {
+      "sequence": "20240721_EagleFire_stgo-n-mobo-c",
+      "date": "20240721",
+      "fire": "EagleFire",
+      "camera": "stgo-n-mobo-c",
+      "site": "stgo",
+      "event": "20240721_EagleFire",
+      "n_frames": 80,
+      "original_sizes": {
+        "3072x2048": 80
+      },
+      "tgz_bytes": 97802074,
+      "unreadable": []
+    },
+    {
+      "sequence": "20200813_Ranch2Fire_wilson-e-mobo-c",
+      "date": "20200813",
+      "fire": "Ranch2Fire",
+      "camera": "wilson-e-mobo-c",
+      "site": "wilson",
+      "event": "20200813_Ranch2Fire",
+      "n_frames": 77,
+      "original_sizes": {
+        "3072x2048": 77
+      },
+      "tgz_bytes": 91915841,
+      "unreadable": []
+    },
+    {
+      "sequence": "20240909_BridgeFire_starr-n-mobo-c",
+      "date": "20240909",
+      "fire": "BridgeFire",
+      "camera": "starr-n-mobo-c",
+      "site": "starr",
+      "event": "20240909_BridgeFire",
+      "n_frames": 80,
+      "original_sizes": {
+        "3072x2048": 80
+      },
+      "tgz_bytes": 92529115,
+      "unreadable": []
+    },
+    {
+      "sequence": "20230725.143718-FIRE-sm-n-mobo-c",
+      "date": "20230725",
+      "fire": "143718-FIRE",
+      "camera": "sm-n-mobo-c",
+      "site": "sm",
+      "event": "20230725_143718-FIRE",
+      "n_frames": 80,
+      "original_sizes": {
+        "3072x2048": 80
+      },
+      "tgz_bytes": 52016651,
+      "unreadable": []
+    },
+    {
+      "sequence": "20260722_CreelmanFire_mg-s-mobo-c",
+      "date": "20260722",
+      "fire": "CreelmanFire",
+      "camera": "mg-s-mobo-c",
+      "site": "mg",
+      "event": "20260722_CreelmanFire",
+      "n_frames": 81,
+      "original_sizes": {
+        "3072x2048": 81
+      },
+      "tgz_bytes": 68099652,
+      "unreadable": []
+    },
+    {
+      "sequence": "20251009_RanchoFire_bm-s-mobo-c",
+      "date": "20251009",
+      "fire": "RanchoFire",
+      "camera": "bm-s-mobo-c",
+      "site": "bm",
+      "event": "20251009_RanchoFire",
+      "n_frames": 80,
+      "original_sizes": {
+        "3072x2048": 80
+      },
+      "tgz_bytes": 68209347,
+      "unreadable": []
+    },
+    {
+      "sequence": "20170821_FIRE_lo-s-mobo-c",
+      "date": "20170821",
+      "fire": "FIRE",
+      "camera": "lo-s-mobo-c",
+      "site": "lo",
+      "event": "20170821_FIRE",
+      "n_frames": 81,
+      "original_sizes": {
+        "2048x1536": 81
+      },
+      "tgz_bytes": 78215619,
+      "unreadable": []
+    },
+    {
+      "sequence": "20240802_WarnersFire_sojr-s-mobo-c",
+      "date": "20240802",
+      "fire": "WarnersFire",
+      "camera": "sojr-s-mobo-c",
+      "site": "sojr",
+      "event": "20240802_WarnersFire",
+      "n_frames": 81,
+      "original_sizes": {
+        "3072x2048": 81
+      },
+      "tgz_bytes": 67389157,
+      "unreadable": []
+    },
+    {
+      "sequence": "20200808_OliveFire_wc-e-mobo-c",
+      "date": "20200808",
+      "fire": "OliveFire",
+      "camera": "wc-e-mobo-c",
+      "site": "wc",
+      "event": "20200808_OliveFire",
+      "n_frames": 74,
+      "original_sizes": {
+        "3072x2048": 74
+      },
+      "tgz_bytes": 92578013,
+      "unreadable": []
+    },
+    {
+      "sequence": "20191005_FIRE_vo-n-mobo-c",
+      "date": "20191005",
+      "fire": "FIRE",
+      "camera": "vo-n-mobo-c",
+      "site": "vo",
+      "event": "20191005_FIRE",
+      "n_frames": 77,
+      "original_sizes": {
+        "2048x1536": 77
+      },
+      "tgz_bytes": 61008260,
+      "unreadable": []
+    },
+    {
+      "sequence": "20200911_FIRE_pi-s-mobo-c",
+      "date": "20200911",
+      "fire": "FIRE",
+      "camera": "pi-s-mobo-c",
+      "site": "pi",
+      "event": "20200911_FIRE",
+      "n_frames": 81,
+      "original_sizes": {
+        "2048x1536": 81
+      },
+      "tgz_bytes": 50540536,
+      "unreadable": []
+    },
+    {
+      "sequence": "20190924_FIRE_ml-w-mobo-c",
+      "date": "20190924",
+      "fire": "FIRE",
+      "camera": "ml-w-mobo-c",
+      "site": "ml",
+      "event": "20190924_FIRE",
+      "n_frames": 80,
+      "original_sizes": {
+        "2048x1536": 80
+      },
+      "tgz_bytes": 50053926,
+      "unreadable": []
+    },
+    {
+      "sequence": "20240825_TenajaFire_buff-n-mobo-c",
+      "date": "20240825",
+      "fire": "TenajaFire",
+      "camera": "buff-n-mobo-c",
+      "site": "buff",
+      "event": "20240825_TenajaFire",
+      "n_frames": 80,
+      "original_sizes": {
+        "3072x2048": 80
+      },
+      "tgz_bytes": 69130637,
+      "unreadable": []
+    },
+    {
+      "sequence": "20201003_structurefire_bm-w-mobo-c",
+      "date": "20201003",
+      "fire": "structurefire",
+      "camera": "bm-w-mobo-c",
+      "site": "bm",
+      "event": "20201003_structurefire",
+      "n_frames": 74,
+      "original_sizes": {
+        "3072x2048": 74
+      },
+      "tgz_bytes": 49708614,
+      "unreadable": []
+    },
+    {
+      "sequence": "20191006_FIRE_lo-w-mobo-c",
+      "date": "20191006",
+      "fire": "FIRE",
+      "camera": "lo-w-mobo-c",
+      "site": "lo",
+      "event": "20191006_FIRE",
+      "n_frames": 80,
+      "original_sizes": {
+        "2048x1536": 80
+      },
+      "tgz_bytes": 54497733,
+      "unreadable": []
+    }
+  ]
+}
