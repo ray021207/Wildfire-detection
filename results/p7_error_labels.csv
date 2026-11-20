@@ -1,0 +1,47 @@
+id,category,note
+F00,fog/haze,haze band along the horizon
+F01,fog/haze,same haze band (same sequence as F00)
+F02,fog/haze,same haze band (same sequence as F00)
+F03,fog/haze,haze over the ridgeline
+F04,fog/haze,haze over distant valley
+F05,other: camera hardware in view,dark camera housing / mast fills the tile
+F06,other: terrain texture,bright rocks and dry grass
+F07,other: terrain texture,trees and shadows
+F08,fog/haze,haze over distant terrain
+F09,clouds,small white cloud in clear sky
+F10,fog/haze,haze over distant city and hills
+F11,fog/haze,same as F10
+F12,fog/haze,same view as F10
+F13,fog/haze,same view as F10
+F14,other: night lights,city lights at night
+F15,other: night lights,city lights at night
+F16,other: night lights,city lights at night
+F17,clouds,large convective cloud
+F18,other: terrain texture,forested ridge against sky
+F19,glare,sun ray / lens streak across the sky
+F20,fog/haze,haze on the far horizon
+F21,fog/haze,same as F20
+F22,clouds,cumulus clouds above ridge
+F23,clouds,cumulus cloud edge above ridge
+F24,clouds,small cloud cap on a distant peak
+F25,clouds,thin cloud streak and haze near the sun
+F26,glare,clouds next to the sun with lens flare and vignette
+F27,fog/haze,overcast haze over distant ridges
+F28,fog/haze,same as F27
+F29,fog/haze,same as F27
+F30,other: real smoke before t=0,a genuine smoke plume is visible 38 min before the labelled t=0 (another fire or a label error)
+F31,rain/dirt on lens,blurry spots on the lens
+F32,rain/dirt on lens,blurry spots on the lens (same sequence as F31)
+F33,rain/dirt on lens,same as F32
+F34,rain/dirt on lens,same as F32
+F35,clouds,small cloud above the horizon
+F36,clouds,overcast cloud deck
+F37,clouds,overcast cloud deck near lens edge
+F38,clouds,overcast cloud deck
+M00,very distant smoke,small dark plume on the far horizon among clouds
+M01,low contrast,faint smoke in hazy horizon
+M02,low contrast,overcast and hazy; smoke barely distinguishable
+M03,low contrast,hazy distant terrain
+M04,other: just late,smoke clearly visible; first alert at 11 min because the persistence rule waits for 3 of 5 frames
+M05,night,night scene; no visible plume
+M06,night,night scene; city lights

@@ -1,0 +1,34 @@
+{
+  "false_alarm": {
+    "n_reviewed": 39,
+    "counts": {
+      "fog/haze": 15,
+      "clouds": 10,
+      "rain/dirt on lens": 4,
+      "other: terrain texture": 3,
+      "other: night lights": 3,
+      "glare": 2,
+      "other: camera hardware in view": 1,
+      "other: real smoke before t=0": 1
+    },
+    "night_items": 3,
+    "by_split": {
+      "test_unseen": 20,
+      "test_seen": 19
+    }
+  },
+  "miss": {
+    "n_reviewed": 7,
+    "counts": {
+      "low contrast": 3,
+      "night": 2,
+      "very distant smoke": 1,
+      "other: just late": 1
+    },
+    "night_items": 2,
+    "by_split": {
+      "test_unseen": 5,
+      "test_seen": 2
+    }
+  }
+}
