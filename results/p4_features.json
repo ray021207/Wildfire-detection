@@ -1,0 +1,14 @@
+{
+  "backbone": "mobilenet_v3_large IMAGENET1K_V2 (torchvision)",
+  "n_frames": 8668,
+  "tiles_per_frame": 40,
+  "embedding_dim": 960,
+  "pca_dim": 256,
+  "pca_explained_variance": {
+    "cur": 0.954832136631012,
+    "diff_al": 0.9633270502090454,
+    "diff_raw": 0.9631124138832092
+  },
+  "extraction_seconds_gpu_fp16_3_inputs": 855.1537575721741,
+  "device": "cuda"
+}
