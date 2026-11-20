@@ -1,0 +1,17 @@
+{
+  "torch_threads": 8,
+  "mobilenet_v3_large": {
+    "params_millions": 5.483032,
+    "gmacs_per_tile": 0.21658976,
+    "imagenet_top1_reported_by_torchvision": 75.274,
+    "cpu_ms_per_40_tiles_median": 213.29539999715053,
+    "cpu_ms_per_40_tiles_p95": 215.46086999878753
+  },
+  "efficientnet_b0": {
+    "params_millions": 5.288548,
+    "gmacs_per_tile": 0.385814752,
+    "imagenet_top1_reported_by_torchvision": 77.692,
+    "cpu_ms_per_40_tiles_median": 358.9064999978291,
+    "cpu_ms_per_40_tiles_p95": 375.5721299981815
+  }
+}
