@@ -118,7 +118,8 @@ def label_of(m):
 
 
 def plot_tradeoff(curves, results):
-    show = [m for m in curves if m.split("+")[0] in KEY]
+    keep = ("p4_A2_finetune", "p5_B2w_finetune_diff_warm")
+    show = [m for m in curves if m.split("+")[0] in keep or m.startswith("p5_B1_frozen_lr_diff+")]
     fig, ax = plt.subplots(2, 2, figsize=(14, 10), sharex=True)
     for j, sp in enumerate(("test_seen", "test_unseen")):
         for m in show:
@@ -135,8 +136,9 @@ def plot_tradeoff(curves, results):
         for a in ax[:, j]:
             a.grid(alpha=0.3, which="both")
     ax[0, 0].legend(fontsize=8)
-    fig.suptitle("Detection speed vs false-alarm rate as the alert threshold changes "
-                 "(gaps = more than half of fires never detected)", fontsize=11)
+    fig.suptitle("Detection speed vs false-alarm rate as the alert threshold changes.\n"
+                 "Each line = one model swept over thresholds. Gaps in the top row = more than half of fires never "
+                 "detected; thresholds with zero false alerts are off the log axis.", fontsize=10)
     fig.tight_layout()
     fig.savefig(FIGURES / "p6_tradeoff.png", dpi=110)
     plt.close(fig)
