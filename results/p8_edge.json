@@ -1,0 +1,165 @@
+{
+  "cpu_threads_used": 16,
+  "onnxruntime": "1.32.0",
+  "tensorrt": "not tested: TensorRT is not installed and would add several GB, which does not fit the 10 GB folder budget",
+  "p4_A2_finetune": {
+    "onnx_fp32_mb": 11.881338,
+    "onnx_int8_mb": 3.453756,
+    "onnx_vs_torch_max_abs_logit_diff": 1.9073486328125e-05,
+    "fp32_per_tile": {
+      "median_ms": 1.9524499984981958,
+      "p95_ms": 2.146534995699767,
+      "runs": 300
+    },
+    "fp32_per_frame_end_to_end": {
+      "median_ms": 121.42390000008163,
+      "p95_ms": 126.27822499962349,
+      "runs": 60
+    },
+    "fp32_fps": 8.23561094643911,
+    "fp32_per_frame_model_only": {
+      "median_ms": 71.92445000328007,
+      "p95_ms": 73.47188499952608,
+      "runs": 40
+    },
+    "int8_per_tile": {
+      "median_ms": 2.5499500006844755,
+      "p95_ms": 2.8803549997974187,
+      "runs": 300
+    },
+    "int8_per_frame_end_to_end": {
+      "median_ms": 113.50434999985737,
+      "p95_ms": 119.22378500239574,
+      "runs": 60
+    },
+    "int8_fps": 8.81023502624575,
+    "int8_per_frame_model_only": {
+      "median_ms": 63.599400000384776,
+      "p95_ms": 67.37820000198553,
+      "runs": 40
+    },
+    "onnx_fp32_vs_training_scores_max_abs_diff": 0.03100728988647461,
+    "accuracy_test": {
+      "test_seen": {
+        "fp32": {
+          "frame_pr_auc": 0.8565411570921012,
+          "median_ttd_min_detected_only": 4.0,
+          "pct_detected_within_10min": 85.0,
+          "pct_never_detected": 5.0,
+          "false_alerts_per_camera_day": 41.66037735849057
+        },
+        "int8": {
+          "frame_pr_auc": 0.7159003501472129,
+          "median_ttd_min_detected_only": 4.008333333333333,
+          "pct_detected_within_10min": 75.0,
+          "pct_never_detected": 10.0,
+          "false_alerts_per_camera_day": 144.90566037735852
+        }
+      },
+      "test_unseen": {
+        "fp32": {
+          "frame_pr_auc": 0.7946142291568383,
+          "median_ttd_min_detected_only": 4.508333333333333,
+          "pct_detected_within_10min": 68.42105263157895,
+          "pct_never_detected": 5.263157894736842,
+          "false_alerts_per_camera_day": 93.45695364238412
+        },
+        "int8": {
+          "frame_pr_auc": 0.6616579499927534,
+          "median_ttd_min_detected_only": 1.0,
+          "pct_detected_within_10min": 84.21052631578947,
+          "pct_never_detected": 0.0,
+          "false_alerts_per_camera_day": 205.98675496688745
+        }
+      }
+    },
+    "int8_vs_fp32_mean_abs_frame_score_diff": 0.2077852189540863,
+    "threshold": 0.4488255003941896,
+    "reference_gpu_pytorch_fp16_40_tiles": {
+      "median_ms": 7.942199998069555,
+      "p95_ms": 9.594645003744517,
+      "runs": 100,
+      "device": "NVIDIA GeForce RTX 4070 Laptop GPU"
+    }
+  },
+  "p5_B2w_finetune_diff_warm": {
+    "onnx_fp32_mb": 11.883066,
+    "onnx_int8_mb": 3.454188,
+    "onnx_vs_torch_max_abs_logit_diff": 1.621246337890625e-05,
+    "fp32_per_tile": {
+      "median_ms": 2.0593000008375384,
+      "p95_ms": 2.5018800017278413,
+      "runs": 300
+    },
+    "fp32_per_frame_end_to_end": {
+      "median_ms": 208.63920000192593,
+      "p95_ms": 216.8366249967221,
+      "runs": 60
+    },
+    "fp32_fps": 4.79296316315807,
+    "fp32_per_frame_model_only": {
+      "median_ms": 72.61869999638293,
+      "p95_ms": 74.5048900040274,
+      "runs": 40
+    },
+    "int8_per_tile": {
+      "median_ms": 2.884900000935886,
+      "p95_ms": 3.233940001882729,
+      "runs": 300
+    },
+    "int8_per_frame_end_to_end": {
+      "median_ms": 198.89600000169594,
+      "p95_ms": 210.21520000103916,
+      "runs": 60
+    },
+    "int8_fps": 5.027753197608163,
+    "int8_per_frame_model_only": {
+      "median_ms": 66.68345000070985,
+      "p95_ms": 71.92530499960412,
+      "runs": 40
+    },
+    "onnx_fp32_vs_training_scores_max_abs_diff": 0.053860634565353394,
+    "accuracy_test": {
+      "test_seen": {
+        "fp32": {
+          "frame_pr_auc": 0.8894057132234803,
+          "median_ttd_min_detected_only": 0.9916666666666667,
+          "pct_detected_within_10min": 100.0,
+          "pct_never_detected": 0.0,
+          "false_alerts_per_camera_day": 105.05660377358492
+        },
+        "int8": {
+          "frame_pr_auc": 0.7172679592756224,
+          "median_ttd_min_detected_only": 0.0,
+          "pct_detected_within_10min": 100.0,
+          "pct_never_detected": 0.0,
+          "false_alerts_per_camera_day": 59.773584905660385
+        }
+      },
+      "test_unseen": {
+        "fp32": {
+          "frame_pr_auc": 0.8058532744619626,
+          "median_ttd_min_detected_only": 1.5,
+          "pct_detected_within_10min": 84.21052631578947,
+          "pct_never_detected": 5.263157894736842,
+          "false_alerts_per_camera_day": 116.34437086092717
+        },
+        "int8": {
+          "frame_pr_auc": 0.6685127460800475,
+          "median_ttd_min_detected_only": 0.0,
+          "pct_detected_within_10min": 100.0,
+          "pct_never_detected": 0.0,
+          "false_alerts_per_camera_day": 53.40397350993379
+        }
+      }
+    },
+    "int8_vs_fp32_mean_abs_frame_score_diff": 0.25681281089782715,
+    "threshold": 0.27963173389434814,
+    "reference_gpu_pytorch_fp16_40_tiles": {
+      "median_ms": 8.550549999199575,
+      "p95_ms": 9.7707199947763,
+      "runs": 100,
+      "device": "NVIDIA GeForce RTX 4070 Laptop GPU"
+    }
+  }
+}
