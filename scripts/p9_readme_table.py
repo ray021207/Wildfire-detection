@@ -12,14 +12,12 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from src.common import ROOT, read_result, write_result  # noqa: E402
 
 ROWS = [
-    ("A1 single frame, frozen + LR", "p4_A1_frozen_lr", None),
-    ("A2 single frame, fine-tuned", "p4_A2_finetune", "p4_A2_finetune"),
+    ("A2: single frame", "p4_A2_finetune", "p4_A2_finetune"),
     ("A2 + persistence", "p4_A2_finetune+persist", "p4_A2_finetune"),
-    ("B1 frame + diff, frozen + LR", "p5_B1_frozen_lr_diff", None),
-    ("B2 frame + diff, fine-tuned from ImageNet", "p5_B2_finetune_diff", None),
-    ("B2-warm frame + diff, fine-tuned from A2", "p5_B2w_finetune_diff_warm", "p5_B2w_finetune_diff_warm"),
+    ("B2-warm: frame + difference", "p5_B2w_finetune_diff_warm", "p5_B2w_finetune_diff_warm"),
     ("B2-warm + persistence", "p5_B2w_finetune_diff_warm+persist", "p5_B2w_finetune_diff_warm"),
 ]
+OP = "f1"  # threshold maximising validation frame F1 (the FA-budget point misses most fires; see NOTES)
 
 
 def fmt(v, nd=1, suffix=""):
@@ -27,38 +25,67 @@ def fmt(v, nd=1, suffix=""):
 
 
 def main():
+    p5 = read_result("p5_temporal")["models"]
     p6 = read_result("p6_operational")
     p8 = read_result("p8_edge")
     ops = p6["operating_points"]
-    lines = ["| Model | Cameras | Median time-to-detection (min, all fires) | % fires detected within 10 min "
-             "| False alerts per camera-day | CPU latency per frame, ms (FP32 / INT8) |",
-             "|---|---|---|---|---|---|"]
+    lines = ["| Model | Cameras | Median minutes to detection | Fires detected within 10 min "
+             "| False alerts per camera-day | Frame PR-AUC | CPU ms per frame (median, end to end) |",
+             "|---|---|---|---|---|---|---|"]
     table = []
     for label, key, lat_key in ROWS:
         name = key if key in ops else next((m for m in ops if m.startswith(key)), None)
         if name is None:
             continue
-        op = "fa_budget" if "fa_budget" in ops[name] else "f1"
-        lat = "not measured"
-        if lat_key and lat_key in p8:
-            lat = (f"{p8[lat_key]['fp32_per_frame_end_to_end']['median_ms']:.0f} / "
-                   f"{p8[lat_key]['int8_per_frame_end_to_end']['median_ms']:.0f}")
+        shown = label + (f" ({name.split('persist')[1].replace('of', ' of ')})" if "+persist" in name else "")
+        lat = f"{p8[lat_key]['fp32_per_frame_end_to_end']['median_ms']:.0f}" if lat_key in p8 else "not measured"
         for sp, sp_label in (("test_seen", "seen"), ("test_unseen", "unseen")):
-            r = ops[name][op][sp]
-            row = {"model": label, "variant": name, "operating_point": op, "cameras": sp_label,
+            r = ops[name][OP][sp]
+            pr = p5[name][f"{sp}_frame"]["pr_auc"]
+            row = {"model": shown, "variant": name, "operating_point": OP, "cameras": sp_label,
                    "median_ttd_min_all_fires": r["median_ttd_min_all_fires"],
+                   "median_ttd_ci95": r["median_ttd_all_fires_ci95"],
                    "pct_within_10min": r["pct_detected_within_10min"],
-                   "false_alerts_per_camera_day": r["false_alerts_per_camera_day"], "latency": lat}
+                   "false_alerts_per_camera_day": r["false_alerts_per_camera_day"],
+                   "false_alerts_ci95": r["false_alerts_per_camera_day_ci95"],
+                   "frame_pr_auc": pr, "cpu_ms_per_frame_fp32": lat}
             table.append(row)
-            med = fmt(r["median_ttd_min_all_fires"]) if r["median_ttd_min_all_fires"] is not None else "not reached (>50% missed)"
-            lines.append(f"| {label} | {sp_label} ({r['n_sequences']} fires) | {med} | {fmt(r['pct_detected_within_10min'], 0, '%')} "
-                         f"| {fmt(r['false_alerts_per_camera_day'], 2)} | {lat} |")
+            med = fmt(r["median_ttd_min_all_fires"]) if r["median_ttd_min_all_fires"] is not None else "not reached"
+            fa_ci = r["false_alerts_per_camera_day_ci95"]
+            lines.append(f"| {shown} | {sp_label} ({r['n_sequences']} fires) | {med} "
+                         f"| {fmt(r['pct_detected_within_10min'], 0, '%')} "
+                         f"| {fmt(r['false_alerts_per_camera_day'], 1)} [{fmt(fa_ci[0], 1)}-{fmt(fa_ci[1], 1)}] "
+                         f"| {pr:.3f} | {lat} |")
     md = "\n".join(lines)
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
     readme = re.sub(r"(<!-- RESULTS-TABLE:START -->).*?(<!-- RESULTS-TABLE:END -->)",
                     lambda m: f"{m.group(1)}\n{md}\n{m.group(2)}", readme, flags=re.S)
     (ROOT / "README.md").write_text(readme, encoding="utf-8")
-    write_result("p9_table", {"rows": table})
+    # Derived numbers quoted in README/NOTES, computed here so none is typed by hand.
+    derived = {}
+    for m in ("p4_A2_finetune", "p5_B2w_finetune_diff_warm"):
+        if m not in p8:
+            continue
+        r = p8[m]
+        derived[m] = {
+            "int8_size_reduction_x": r["onnx_fp32_mb"] / r["onnx_int8_mb"],
+            "int8_frame_ms_saved_end_to_end": r["fp32_per_frame_end_to_end"]["median_ms"]
+            - r["int8_per_frame_end_to_end"]["median_ms"],
+            "int8_frame_pr_auc_drop": {sp: r["accuracy_test"][sp]["fp32"]["frame_pr_auc"]
+                                       - r["accuracy_test"][sp]["int8"]["frame_pr_auc"]
+                                       for sp in r["accuracy_test"]},
+            "model_share_of_end_to_end_fp32": r["fp32_per_frame_model_only"]["median_ms"]
+            / r["fp32_per_frame_end_to_end"]["median_ms"],
+        }
+    bc = read_result("p4_backbone_choice")
+    derived["backbone_cpu_slowdown_effnet_vs_mobilenet_x"] = (
+        bc["efficientnet_b0"]["cpu_ms_per_40_tiles_median"] / bc["mobilenet_v3_large"]["cpu_ms_per_40_tiles_median"])
+    from src.common import folder_size_bytes
+    storage = {p: folder_size_bytes(ROOT / p) / 1e9 for p in (".venv", "data", "data/frames", "data/features",
+                                                               "data/models", ".git")}
+    storage["total"] = folder_size_bytes(ROOT) / 1e9
+    storage["budget"] = 10.0
+    write_result("p9_table", {"rows": table, "derived": derived, "storage_gb": storage})
     print(md)
 
 

@@ -1,0 +1,187 @@
+{
+  "rows": [
+    {
+      "model": "A2: single frame",
+      "variant": "p4_A2_finetune",
+      "operating_point": "f1",
+      "cameras": "seen",
+      "median_ttd_min_all_fires": 4.0,
+      "median_ttd_ci95": [
+        1.0083333333333333,
+        6.5
+      ],
+      "pct_within_10min": 90.0,
+      "false_alerts_per_camera_day": 41.66037735849057,
+      "false_alerts_ci95": [
+        19.92390253152556,
+        66.9388883966432
+      ],
+      "frame_pr_auc": 0.8567490073118318,
+      "cpu_ms_per_frame_fp32": "121"
+    },
+    {
+      "model": "A2: single frame",
+      "variant": "p4_A2_finetune",
+      "operating_point": "f1",
+      "cameras": "unseen",
+      "median_ttd_min_all_fires": 5.016666666666667,
+      "median_ttd_ci95": [
+        2.0,
+        10.283333333333333
+      ],
+      "pct_within_10min": 68.42105263157895,
+      "false_alerts_per_camera_day": 95.36423841059604,
+      "false_alerts_ci95": [
+        42.1276595744681,
+        153.1965889452362
+      ],
+      "frame_pr_auc": 0.7947805593010298,
+      "cpu_ms_per_frame_fp32": "121"
+    },
+    {
+      "model": "A2 + persistence (2 of 3)",
+      "variant": "p4_A2_finetune+persist2of3",
+      "operating_point": "f1",
+      "cameras": "seen",
+      "median_ttd_min_all_fires": 5.983333333333333,
+      "median_ttd_ci95": [
+        3.0,
+        7.5
+      ],
+      "pct_within_10min": 80.0,
+      "false_alerts_per_camera_day": 7.245283018867926,
+      "false_alerts_ci95": [
+        0.0,
+        16.447746735381877
+      ],
+      "frame_pr_auc": 0.863233114835242,
+      "cpu_ms_per_frame_fp32": "121"
+    },
+    {
+      "model": "A2 + persistence (2 of 3)",
+      "variant": "p4_A2_finetune+persist2of3",
+      "operating_point": "f1",
+      "cameras": "unseen",
+      "median_ttd_min_all_fires": 6.983333333333333,
+      "median_ttd_ci95": [
+        3.0,
+        14.0
+      ],
+      "pct_within_10min": 52.63157894736842,
+      "false_alerts_per_camera_day": 32.42384105960265,
+      "false_alerts_ci95": [
+        13.333333333333336,
+        53.375494071146214
+      ],
+      "frame_pr_auc": 0.7928237671801277,
+      "cpu_ms_per_frame_fp32": "121"
+    },
+    {
+      "model": "B2-warm: frame + difference",
+      "variant": "p5_B2w_finetune_diff_warm",
+      "operating_point": "f1",
+      "cameras": "seen",
+      "median_ttd_min_all_fires": 0.9916666666666667,
+      "median_ttd_ci95": [
+        0.0,
+        1.0166666666666666
+      ],
+      "pct_within_10min": 100.0,
+      "false_alerts_per_camera_day": 101.43396226415096,
+      "false_alerts_ci95": [
+        57.74436090225565,
+        152.73693901035676
+      ],
+      "frame_pr_auc": 0.8891427737367028,
+      "cpu_ms_per_frame_fp32": "209"
+    },
+    {
+      "model": "B2-warm: frame + difference",
+      "variant": "p5_B2w_finetune_diff_warm",
+      "operating_point": "f1",
+      "cameras": "unseen",
+      "median_ttd_min_all_fires": 2.0,
+      "median_ttd_ci95": [
+        0.0,
+        4.016666666666667
+      ],
+      "pct_within_10min": 84.21052631578947,
+      "false_alerts_per_camera_day": 116.34437086092717,
+      "false_alerts_ci95": [
+        67.1910875331565,
+        169.76779365632626
+      ],
+      "frame_pr_auc": 0.8061532637440374,
+      "cpu_ms_per_frame_fp32": "209"
+    },
+    {
+      "model": "B2-warm + persistence (3 of 5)",
+      "variant": "p5_B2w_finetune_diff_warm+persist3of5",
+      "operating_point": "f1",
+      "cameras": "seen",
+      "median_ttd_min_all_fires": 3.0,
+      "median_ttd_ci95": [
+        0.0,
+        6.0
+      ],
+      "pct_within_10min": 90.0,
+      "false_alerts_per_camera_day": 34.41509433962264,
+      "false_alerts_ci95": [
+        18.021964956195248,
+        53.935959274936366
+      ],
+      "frame_pr_auc": 0.8911141478403422,
+      "cpu_ms_per_frame_fp32": "209"
+    },
+    {
+      "model": "B2-warm + persistence (3 of 5)",
+      "variant": "p5_B2w_finetune_diff_warm+persist3of5",
+      "operating_point": "f1",
+      "cameras": "unseen",
+      "median_ttd_min_all_fires": 3.0,
+      "median_ttd_ci95": [
+        0.0,
+        6.983333333333333
+      ],
+      "pct_within_10min": 73.68421052631578,
+      "false_alerts_per_camera_day": 38.14569536423842,
+      "false_alerts_ci95": [
+        19.19745358090186,
+        59.12582781456955
+      ],
+      "frame_pr_auc": 0.8100676351313508,
+      "cpu_ms_per_frame_fp32": "209"
+    }
+  ],
+  "derived": {
+    "p4_A2_finetune": {
+      "int8_size_reduction_x": 3.4401208423524996,
+      "int8_frame_ms_saved_end_to_end": 7.9195500002242625,
+      "int8_frame_pr_auc_drop": {
+        "test_seen": 0.14064080694488834,
+        "test_unseen": 0.13295627916408492
+      },
+      "model_share_of_end_to_end_fp32": 0.5923417877636258
+    },
+    "p5_B2w_finetune_diff_warm": {
+      "int8_size_reduction_x": 3.4401908639599235,
+      "int8_frame_ms_saved_end_to_end": 9.74320000022999,
+      "int8_frame_pr_auc_drop": {
+        "test_seen": 0.1721377539478579,
+        "test_unseen": 0.13734052838191513
+      },
+      "model_share_of_end_to_end_fp32": 0.3480587540390904
+    },
+    "backbone_cpu_slowdown_effnet_vs_mobilenet_x": 1.6826734191296382
+  },
+  "storage_gb": {
+    ".venv": 5.004184964,
+    "data": 2.817917577,
+    "data/frames": 2.158232886,
+    "data/features": 0.534586365,
+    "data/models": 0.066976705,
+    ".git": 0.016054739,
+    "total": 7.855466368,
+    "budget": 10.0
+  }
+}
