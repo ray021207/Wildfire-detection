@@ -58,7 +58,7 @@ class FrameDataset(Dataset):
                 cur_t = np.stack([augment_tile(c, rng) for c in cur_t])
         # Return compact uint8 tiles; normalisation and differencing happen on the
         # GPU in model_inputs(). Building 48 MB float32 arrays per sample on the CPU
-        # caused millions of page faults per second on Windows (see NOTES failures log).
+        # caused millions of page faults per second on Windows and stalled training.
         x = np.ascontiguousarray(cur_t)
         if self.temporal:
             x = np.concatenate([x, np.ascontiguousarray(prev_t)], axis=3)  # (40, 224, 224, 6)
@@ -82,7 +82,7 @@ def model_inputs(x_u8: torch.Tensor, temporal: bool, dev: str) -> torch.Tensor:
     """
     # .contiguous() matters: without it the permuted tensor has channels-last
     # strides, PyTorch propagates that memory layout through the whole network,
-    # and training steps ran several times slower on this GPU (see NOTES failures log).
+    # and training steps ran several times slower on this GPU.
     x = x_u8.to(dev, non_blocking=True).permute(0, 3, 1, 2).float().contiguous()
     mean, std = _MEAN.to(dev), _STD.to(dev)
     cur = (x[:, :3] / 255 - mean) / std

@@ -80,7 +80,7 @@ def main():
                          "frame become extra positive tile labels")
     args = ap.parse_args()
     seed_everything()
-    torch.set_num_threads(4)  # leave CPU cores to the loader threads (see NOTES, failures log)
+    torch.set_num_threads(4)  # leave CPU cores to the loader threads
     temporal = args.mode == "temporal"
     dev = "cuda" if torch.cuda.is_available() else "cpu"
     df = load_index()

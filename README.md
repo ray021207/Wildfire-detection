@@ -51,7 +51,7 @@ All numbers are written by `scripts/p9_readme_table.py` from `results/*.json`.
 
 What the numbers say:
 - **Fine-tuning matters most.** Frozen ImageNet features with a linear classifier barely beat chance
-  at the frame level; fine-tuned tiles do far better (see NOTES.md, Phase 4).
+  at the frame level; fine-tuned tiles do far better (`results/p4_*.json`).
 - **Time helps where it counts.** Adding a difference image gave a large gain to the frozen model.
   After fine-tuning, single-frame and temporal models are within each other's confidence intervals
   on frame PR-AUC, but on **unseen cameras** the temporal model catches more fires within 10 minutes
@@ -111,11 +111,20 @@ What the numbers say:
 **Citation:** Dewangan, A., et al. (2022). FIgLib & SmokeyNet: Dataset and Deep Learning Model for
 Real-Time Wildland Fire Smoke Detection. *Remote Sensing*, 14(4), 1007.
 
+## License
+
+- **Code** (`src/`, `scripts/`): MIT, see [`LICENSE`](LICENSE).
+- **Figures and data-derived results** (`figures/`, `results/`): contain or are derived from HPWREN
+  FIgLib imagery and are licensed **CC BY-NC 4.0** (non-commercial, attribution required).
+- **Raw images, bounding boxes and model weights are not redistributed**; the scripts download the
+  data from HPWREN and the pretrained weights through torchvision.
+
+Full details and attributions: [`NOTICE.md`](NOTICE.md).
+
 ## Repository
 
 `src/` shared code · `scripts/` one script per step · `results/` every number (JSON) ·
-`figures/` all plots · `NOTES.md` long study guide (every step explained, exercises, quiz) ·
-`PROGRESS.md` status. `data/` is gitignored.
+`figures/` all plots · `data/` (gitignored) holds the downloaded frames, features and weights.
 
 ## Reproduce
 

@@ -17,7 +17,7 @@ ROWS = [
     ("B2-warm: frame + difference", "p5_B2w_finetune_diff_warm", "p5_B2w_finetune_diff_warm"),
     ("B2-warm + persistence", "p5_B2w_finetune_diff_warm+persist", "p5_B2w_finetune_diff_warm"),
 ]
-OP = "f1"  # threshold maximising validation frame F1 (the FA-budget point misses most fires; see NOTES)
+OP = "f1"  # threshold maximising validation frame F1 (the FA-budget point misses most fires)
 
 
 def fmt(v, nd=1, suffix=""):
@@ -61,7 +61,7 @@ def main():
     readme = re.sub(r"(<!-- RESULTS-TABLE:START -->).*?(<!-- RESULTS-TABLE:END -->)",
                     lambda m: f"{m.group(1)}\n{md}\n{m.group(2)}", readme, flags=re.S)
     (ROOT / "README.md").write_text(readme, encoding="utf-8")
-    # Derived numbers quoted in README/NOTES, computed here so none is typed by hand.
+    # Derived numbers quoted in the README, computed here so none is typed by hand.
     derived = {}
     for m in ("p4_A2_finetune", "p5_B2w_finetune_diff_warm"):
         if m not in p8:

@@ -13,7 +13,7 @@ For each model (A2 single-frame, B2-warm frame+diff):
   4. Accuracy of INT8 vs FP32 on the test frames: frame PR-AUC and the
      operational metrics at the same validation-chosen threshold.
   5. For reference only: PyTorch FP16 latency on the laptop GPU.
-TensorRT is NOT tested (see NOTES.md).
+TensorRT is NOT tested (not installed; it would exceed the project's 10 GB storage budget).
 
 Writes data/models/*.onnx, results/p8_edge.json.
 Usage: python scripts/p8_export.py
