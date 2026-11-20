@@ -1,4 +1,5 @@
 """Dataset that turns one frame (and optionally its predecessor) into 40 tiles."""
+import cv2
 import numpy as np
 import pandas as pd
 import torch
@@ -55,16 +56,40 @@ class FrameDataset(Dataset):
                 prev_t = np.stack([b for _, b in pairs])
             else:
                 cur_t = np.stack([augment_tile(c, rng) for c in cur_t])
-        x = normalise(cur_t)
+        # Return compact uint8 tiles; normalisation and differencing happen on the
+        # GPU in model_inputs(). Building 48 MB float32 arrays per sample on the CPU
+        # caused millions of page faults per second on Windows (see NOTES failures log).
+        x = np.ascontiguousarray(cur_t)
         if self.temporal:
-            d = np.stack([difference_image(c, p) for c, p in zip(cur_t, prev_t)])
-            x = np.concatenate([x, normalise(d)], axis=1)
+            x = np.concatenate([x, np.ascontiguousarray(prev_t)], axis=3)  # (40, 224, 224, 6)
         return torch.from_numpy(x), int(row.label), i
 
 
 def collate(batch):
     xs, ys, idx = zip(*batch)
     return torch.cat(xs), torch.tensor(ys), torch.tensor(idx)
+
+
+_MEAN = torch.tensor([0.485, 0.456, 0.406]).view(1, 3, 1, 1)
+_STD = torch.tensor([0.229, 0.224, 0.225]).view(1, 3, 1, 1)
+
+
+def model_inputs(x_u8: torch.Tensor, temporal: bool, dev: str) -> torch.Tensor:
+    """uint8 (N, 224, 224, 3 or 6) -> normalised float (N, 3 or 6, 224, 224) on `dev`.
+
+    Same arithmetic as imaging.normalise / imaging.difference_image on the CPU:
+    diff = clip(128 + 2 * (cur - prev), 0, 255), then (v/255 - mean) / std.
+    """
+    # .contiguous() matters: without it the permuted tensor has channels-last
+    # strides, PyTorch propagates that memory layout through the whole network,
+    # and training steps ran several times slower on this GPU (see NOTES failures log).
+    x = x_u8.to(dev, non_blocking=True).permute(0, 3, 1, 2).float().contiguous()
+    mean, std = _MEAN.to(dev), _STD.to(dev)
+    cur = (x[:, :3] / 255 - mean) / std
+    if not temporal:
+        return cur
+    d = torch.clamp(128 + 2 * (x[:, :3] - x[:, 3:]), 0, 255)
+    return torch.cat([cur, (d / 255 - mean) / std], dim=1)
 
 
 class ThreadLoader:
@@ -93,6 +118,9 @@ class ThreadLoader:
         batches = [order[i:i + self.bs] for i in range(0, len(order), self.bs)]
         if self.drop_last and batches and len(batches[-1]) < self.bs:
             batches = batches[:-1]
+        # Each loader thread does its own OpenCV work; letting OpenCV also start its
+        # own internal thread pool per call oversubscribes the CPU badly.
+        cv2.setNumThreads(1)
         with ThreadPoolExecutor(self.threads) as ex:
             futs = []
             for b in batches[: self.prefetch]:
